@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  article {
+    margin: 16px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}
