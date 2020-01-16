@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Axios from 'axios';
 
 import logo from '../../logo.svg';
+import style from './UserDetail.module.scss';
 
 class UserDetail extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class UserDetail extends React.Component {
   render() {
     const { user, loading } = this.state;
     return (
-      <article>
+      <article className={style.user}>
         <Link to="/">volver a listado</Link>
         {!loading ? (
           <>
